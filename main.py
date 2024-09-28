@@ -27,7 +27,7 @@ def main():
   # start = datetime(2024,9,27,10,25)
   # end = datetime(2024,9,28,0,25)
 
-  log_entries = create_log_entries(start, end, activity_code, number_of_people, note)
+  log_entries = create_log_entries(start, end, number_of_people, activity_code, note)
   append_csv_file(csv_file, log_entries)
   for entry in log_entries:
     print(','.join(map(str, entry)))
