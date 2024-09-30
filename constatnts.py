@@ -1,8 +1,12 @@
+# Constants used in the activity log program.
+
+#A description of the program 
 SUMMARY = """\nThis program is an activity log that takes inputs from an interactive user, and from an external file. 
 The program outputs to the screen and to an external file. It allows the user to start and stop a 
 virtual clock, and automatically enter the log information into the activity log in real time.
 """
 
+# Codes, and their corresponding descriptions, that the user can input
 ACTIVITY_CODES = {
   "0": "Reading Canvas Site or Textbook",
   "1": "Studying Using a Practice Quiz",
@@ -20,9 +24,11 @@ ACTIVITY_CODES = {
   "D": "Other" 
 }
 
+# Lists used to validate user input 
 YES = ['Y', 'y', 'Yes', 'yes']
 NO = ['N', 'n', 'No', 'no']
 
+# A polite message displayed to the user
 GOODBYE = """\nAbove is the line (or lines) which have been appended to your Activity Log file.
 Thank you for logging your activity.
 Goodbye.\n"""
